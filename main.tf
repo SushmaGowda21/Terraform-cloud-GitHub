@@ -13,7 +13,7 @@ provider "aws" {
         #profile = "default"
 	}
 
-resource "sushma_instance" "Raminfra" {
+resource "aws_instance" "Sushmainfra" {
 	ami = "ami-05e411cf591b5c9f6" 
 	instance_type = "t2.micro"
 }
